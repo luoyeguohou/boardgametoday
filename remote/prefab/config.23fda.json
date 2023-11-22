@@ -1,0 +1,1 @@
+{"importBase":"import","nativeBase":"native","name":"prefab","deps":[],"uuids":["e8T2eyXvBP6aRlXrjrBhSF"],"paths":{"0":["audio-source",0]},"scenes":{},"packs":{},"versions":{"import":[0,"5e39b"],"native":[]},"redirect":[],"debug":false,"extensionMap":{},"hasPreloadScript":true,"types":["cc.Prefab"]}

@@ -1,0 +1,1 @@
+{"importBase":"import","nativeBase":"native","name":"ui-language","deps":[],"uuids":["5cgWnyyvVCc7XeHpppdL/L","f5NjqfVyhGHIx1vf8K0PSu"],"paths":{"0":["chinese",0],"1":["english",0]},"scenes":{},"packs":{},"versions":{"import":[0,"f6124",1,"40816"],"native":[]},"redirect":[],"debug":false,"extensionMap":{},"hasPreloadScript":true,"types":["cc.TextAsset"]}

@@ -1,0 +1,1 @@
+{"importBase":"import","nativeBase":"native","name":"font","deps":[],"uuids":["64fjDCEVVNDasuyffC+0/p"],"paths":{"0":["font",0]},"scenes":{},"packs":{},"versions":{"import":[0,"20980"],"native":[0,"072ac"]},"redirect":[],"debug":false,"extensionMap":{},"hasPreloadScript":true,"types":["cc.TTFFont"]}

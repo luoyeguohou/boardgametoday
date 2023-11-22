@@ -1,0 +1,55 @@
+{{if eq .tbl "op_item"}}
+	{{/* 道具日志 */}}
+    {{.hdl.SetVal 1 (.hdl.Get .param "id")}}
+    {{.hdl.SetVal 2 (.hdl.Get .param "num")}}
+    {{.hdl.SetVal 3 (.hdl.Get .param "sum")}}
+    {{.hdl.SetVal 4 (.hdl.Get .param "pay")}}
+    {{.hdl.SetVal 5 (.hdl.Get .param "paysum")}}
+    {{.hdl.SetVal 6 (.hdl.Get .param "pricedel")}}
+    {{.hdl.SetVal 7 (.hdl.Get .param "pricesum")}}
+    
+{{else  if eq .tbl "op_system"}}
+    {{/* system日志 */}} 
+    {{.hdl.SetVal 0 (.hdl.Get .param "v1")}}
+    {{.hdl.SetVal 1 (.hdl.Get .param "v2")}}
+
+
+{{else  if eq .tbl "op_nick"}}
+    {{/* 昵称 */}} 
+    {{.hdl.SetVal 0 (.hdl.Get .param "op")}}
+    {{.hdl.SetJson "old" (.hdl.Get .param "old") }}
+    {{.hdl.SetJson "new" (.hdl.Get .param "new") }}
+
+
+{{else  if eq .tbl "op_limit_portrait"}}
+    {{/* 限时头像 */}} 
+    {{.hdl.SetVal 0 (.hdl.Get .param "op")}}
+    {{.hdl.SetVal 1 (.hdl.Get .param "pid")}}
+    {{.hdl.SetVal 2 (.hdl.Get .param "old_expire")}}
+    {{.hdl.SetVal 3 (.hdl.Get .param "expire")}} 
+    {{.hdl.SetJsonFromExtra ""}}
+
+{{else if eq .tbl "op_equip"}}
+	{{/* 装备日志 */}}
+    {{.hdl.SetVal 1 (.hdl.Get .param "id")}}
+    {{.hdl.SetVal 2 (.hdl.Get .param "eid")}}
+    {{.hdl.SetVal 3 (.hdl.Get .param "add")}}
+    {{.hdl.SetVal 4 (.hdl.Get .param "rare")}}
+    {{.hdl.SetVal 5 (.hdl.Get .param "rnum")}}
+    {{.hdl.SetVal 6 (.hdl.Get .param "price")}}
+    {{.hdl.SetJsonFromExtra ""}}
+
+{{else}}
+    {{/* 通用 op写v0 其余按顺序*/}}
+    {{.hdl.SetVal 0 (.hdl.Get .param "op")}}
+    {{.hdl.SetVal 1 (.hdl.Get .param "v1")}}
+    {{.hdl.SetVal 2 (.hdl.Get .param "v2")}}
+    {{.hdl.SetVal 3 (.hdl.Get .param "v3")}}
+    {{.hdl.SetVal 4 (.hdl.Get .param "v4")}}
+    {{.hdl.SetVal 5 (.hdl.Get .param "v5")}}
+    {{.hdl.SetVal 6 (.hdl.Get .param "v6")}}
+    {{.hdl.SetVal 6 (.hdl.Get .param "v7")}}
+    {{.hdl.SetJsonFromExtra ""}}
+
+{{end}}
+{{.hdl.FeedLogger}}
